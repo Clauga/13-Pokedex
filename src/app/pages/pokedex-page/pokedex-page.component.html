@@ -1,0 +1,10 @@
+<div class="pokedex-container">
+    <h2>Pokédex</h2>
+    <div class="pokedex-container">
+        <!-- Componente PokemonListComponent -->
+        <app-pokemon-list [pokemonList]="pokemonList" (selectPokemon)="onSelectPokemon($event)"></app-pokemon-list>
+
+        <!-- Componente PokemonDetailComponent -->
+        <app-pokemon-detail [pokemon]="selectedPokemon"></app-pokemon-detail>
+    </div>
+</div>

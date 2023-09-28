@@ -1,0 +1,15 @@
+<div class="form-container">
+    <h2>Crear Nuevo Pokémon</h2>
+
+    <form (ngSubmit)="onSubmit(pokemonForm)" #pokemonForm="ngForm">
+        <div class="form-group">
+            <label for="name">Nombre del Pokémon</label>
+            <input type="text" id="name" name="name" [(ngModel)]="pokemon.name" required>
+        </div>
+        <div class="form-group">
+            <label for="imgUrl">URL de la Imagen</label>
+            <input type="url" id="imgUrl" name="imgUrl" [(ngModel)]="pokemon.imgUrl" required>
+        </div>
+        <button type="submit" [disabled]="pokemonForm.invalid">Agregar</button>
+    </form>
+</div>

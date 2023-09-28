@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let pokemon of pokemonList">
+        <a href="#" (click)="onSelect(pokemon)">
+            {{ pokemon.name }}
+        </a>
+    </li>
+</ul>

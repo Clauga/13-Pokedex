@@ -1,0 +1,20 @@
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+ .pokedex-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  } 
+  
+  app-pokemon-list,
+  app-pokemon-detail {
+    flex: 1; 
+    margin-right: 20px; 
+  }
+  
